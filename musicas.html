@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noturno's room - room</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="vinyl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="music.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <p id="Title">NOTURNO'S ROOM</p>
+            <div class="container-buttons-windows">
+                <button class="window-control"><i class="fas fa-window-minimize"></i></button>
+                <button class="window-control"><i class="fas fa-window-maximize"></i></button>
+                <button class="window-control"><i class="fas fa-window-close"></i></button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="menu">
+                <div class="container-buttons-windows-menu">
+                    <button class="window-control"><i class="fas fa-window-minimize"></i></button>
+                    <button class="window-control"><i class="fas fa-window-close"></i></button>
+                </div>
+                <div class="container-menu">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="musicas.html" class="nav-link">Músicas</a></li>
+                        <li><a href="filmes.html" class="nav-link">Filmes</a></li>
+                        <li><a href="series.html" class="nav-link">Séries</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="main-music-content">
+
+
+                <div class="vinil">
+                    <div class="circle-wrapper">
+                      <div class="outer-circle"></div>
+                      <img id="album-art" src="" alt="Imagem" class="centered-image">
+                      <div class="inner-circle"></div>
+
+                    </div>
+                  </div>
+                  
+
+                
+                <div class="container-music">
+                    <span id=fundo></span>
+                    <div class="playlist-list">
+                        <ul>
+
+                            <li onclick="changePlaylist('playlist2'); changeAlbumArt('https://th.bing.com/th/id/OIP.vloegYWqIfsiD54_H28k6QHaG8?rs=1&pid=ImgDetMain')">Orientalzadas</li>
+                            <li onclick="changePlaylist('playlist3'); changeAlbumArt('https://m.media-amazon.com/images/S/pv-target-images/37a65aa1bbb7d1660fd3a78232ba4254416a2d40cd1ffd866cd7063110c823a9.jpg')">Cowboy Bebop</li>
+                            <li id="aco" onclick="changePlaylist('playlist4'); changeAlbumArt('https://i.pinimg.com/originals/16/07/54/1607544d838f182181d0c85ba35867e9.jpg')">Aço</li>
+                            <div class="shimmer-button">
+                                <button onclick="changePlaylist('playlist1'); changeAlbumArt('https://images.genius.com/6a3a6d50c228a3f0f5d7a1e653864088.1000x1000x1.jpg')">
+                                    <span class="text">VGod*</span>
+                                    <span class="shimmer"></span>
+                                </button>
+                            </div>
+                            <li onclick="changePlaylist('playlist5'); changeAlbumArt('https://behindthechair.com/wp-content/uploads/2017/01/6_orig-75.jpg')">DutchBob</li>
+                        </ul>
+                        
+
+                    </div>
+                    <div id="playlist-embed">
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    </main>
+</body>
+<script src="spotfy.js"></script>
+<script src="https://sdk.scdn.co/spotify-player.js"></script>
+<script src="spotfy-image.js"></script>
+
+</html>
